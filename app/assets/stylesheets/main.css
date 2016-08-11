@@ -1,0 +1,123 @@
+body
+{
+  font-family: 'Roboto';
+  background-color: white ;
+}
+
+#logo
+{
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  color: #566270;
+}
+
+.posthought
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.posthought input
+{
+  border: 1px solid #E0E3DA;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#nickname
+{
+  width: 120px;
+}
+
+#submit
+{
+  color: white;
+  background-color: #E53A40;
+  opacity: 0.9;
+  border: 0px solid;
+}
+
+.posts-container
+{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.post
+{
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: white;
+  width: 60%;
+  border-bottom:3px solid #E0E3DA;
+  border-top:1px solid #E0E3DA;
+
+}
+
+
+#author
+{
+  font-weight: bold;
+  color:#566270;
+  margin: 10px;
+}
+
+#content
+{
+  overflow: scroll;
+  display:inline;
+  width: 250px;
+  height: 30px;
+  color:#566270;
+  margin: 10px;
+}
+
+
+
+#likenumber
+{
+  margin: 10px;
+  color:#F16B6F;
+}
+
+
+.likes
+{
+  width: 10px;
+  height: 10px;
+  margin-left:0 auto;
+  display:inline;
+
+}
+
+#bar
+{
+  background-color: #FFBC42;
+  display: inline;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#base
+{
+  background-color: #E53A40;
+  color: white;
+  display: inline;
+
+}
+
+#bomb
+{
+  background-color: #ff4e50;
+  color: white;
+  display: inline;
+}
+
+#onfire
+{
+  background-color: #AF4034 ;
+  color: white;
+  display: inline;
+
+}
