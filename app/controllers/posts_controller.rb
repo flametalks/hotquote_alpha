@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @post = Post.new
-    @posts = Post.order('likes DESC')
+    @posts = Post.order('created_at DESC')
   end
 
 
