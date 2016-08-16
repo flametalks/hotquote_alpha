@@ -15,11 +15,11 @@
     <p id="content"><%=post.body%></p>
     <a href="like/<%=post.id%>"><%=image_tag('like.svg' ,class: 'likes')%><a/>
     <p id="likenumber"><%=post.likes%> Likes</p>
-      <%if post.likes > 5%>
+      <%if post.likes > 5 && post.likes < 100%>
       <%=content_tag(:p, "Firecamp",id:"base")%>
-      <%elsif post.likes > 100%>
+      <%elsif post.likes >= 100 && post.likes < 500%>
         <%=content_tag(:p, "On Fire",id:"onfire")%>
-      <%elsif post.likes > 500%>
+      <%elsif post.likes >= 500%>
         <%=content_tag(:p, "Bomb",id:"bomb")%>
       <%else%>
         <%=content_tag(:p, "Barbecue",id:"bar")%>
