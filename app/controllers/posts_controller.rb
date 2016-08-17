@@ -32,6 +32,8 @@ class PostsController < ApplicationController
     end
   end
 
+  def terms_of_use
+  end
   private
 
   def post_params
