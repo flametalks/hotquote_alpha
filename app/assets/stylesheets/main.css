@@ -121,3 +121,21 @@ body
   display: inline;
 
 }
+
+.terms_of_use
+{
+  text-align: center;
+  width: 620px;
+  margin: 0 auto;
+  color:#566270;
+
+}
+
+.terms
+{
+  margin: 10px;
+}
+.terms li
+{
+  margin: 10px;
+}
