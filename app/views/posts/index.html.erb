@@ -13,7 +13,7 @@
   <div class="post">
     <p id="author"><%=post.nickname%> says:</p>
     <p id="content"><%=post.body%></p>
-    <a href="like/<%=post.id%>"><%=image_tag('like_2.svg' ,class: 'likes')%><a/>
+    <a href="like/<%=post.id%>"><%=image_tag('like_v2.svg' ,class: 'likes')%><a/>
     <p id="likenumber"><%=post.likes%> Likes</p>
       <%if post.likes > 5 && post.likes < 100%>
       <%=content_tag(:p, "Firecamp",id:"base")%>
