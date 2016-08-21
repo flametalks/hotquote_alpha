@@ -83,6 +83,19 @@ body
 
 }
 
+#tagsbox
+{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom: 2px solid #E53A40;
+  text-align: center;
+  margin-top: 25px;
+  position: fixed;
+
+}
+
 #postbox h2
 {
   padding-top: 20px;
