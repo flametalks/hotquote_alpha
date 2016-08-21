@@ -79,6 +79,7 @@ body
   margin: 0 auto;
   border-bottom: 2px solid #E53A40;
   text-align: center;
+  position: fixed;
 
 }
 
