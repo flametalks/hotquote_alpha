@@ -1,30 +1,49 @@
-<div class="posthought">
-<%= form_for(@post) do |f| %>
-  <%= f.label :body, "." %>
-  <%= f.text_field :body, placeholder: "Say Something",:length => 180%>
+<div class="page_wrapper">
+  <div class="sidebar">
+    <div id="postbox">
+      <h2>share something!</h2>
+      <%= form_for(@post) do |f| %>
+        <%= f.label :body, "." %>
+        <%= f.text_field :body, placeholder: "Say Something",:length => 180%>
 
-  <%= f.label :nickname, "." %>
-  <%= f.text_field :nickname, placeholder: "Nickname",id: "nickname"%>
-  <%= f.submit "Ignite!",id: "submit"%>
-<% end %>
-</div>
-<div class="posts-container">
-  <%@posts.each do |post|%>
-  <div class="post">
-    <p id="author"><%=post.nickname%> says:</p>
-    <p id="content"><%=post.body%></p>
-    <a href="like/<%=post.id%>"><%=image_tag('like_v2.svg' ,class: 'likes')%><a/>
-    <p id="likenumber"><%=post.likes%> Likes</p>
-      <%if post.likes > 5 && post.likes < 100%>
-      <%=content_tag(:p, "Firecamp",id:"base")%>
-      <%elsif post.likes >= 100 && post.likes < 500%>
-        <%=content_tag(:p, "On Fire",id:"onfire")%>
-      <%elsif post.likes >= 500%>
-        <%=content_tag(:p, "Bomb",id:"bomb")%>
-      <%else%>
-        <%=content_tag(:p, "Barbecue",id:"bar")%>
-      <%end%>
+        <%= f.label :nickname, "." %>
+        <%= f.text_field :nickname, placeholder: "Nickname"%>
+        <%= f.submit "Ignite!",id: "submit"%>
+      <% end %>
+    </div>
+    <div id="postbox">
+      <h2>Tags</h2>
+      <img src="tag.svg" alt="" />
+      <p>
+        Coming soon!
+      </p>
+    </div>
   </div>
-  <%end%>
-
+  <div class="posts-container">
+    <%@posts.each do |post|%>
+    <div class="post">
+      <div id="author">
+        <%=post.nickname%> says:
+      </div>
+      <div id="content">
+        <p><%=post.body%></p>
+      </div>
+      <div id="post-bottom">
+        <div class="likes">
+          <a href="like/<%=post.id%>"><%=image_tag('like_v2.svg' ,class: 'likes')%><a/>
+          <p id="likenumber"><%=post.likes%> Likes</p>
+        </div>
+        <%if post.likes > 5 && post.likes < 100%>
+        <%=content_tag(:p, "Firecamp",id:"base")%>
+        <%elsif post.likes >= 100 && post.likes < 500%>
+          <%=content_tag(:p, "On Fire",id:"onfire")%>
+        <%elsif post.likes >= 500%>
+          <%=content_tag(:p, "Bomb",id:"bomb")%>
+        <%else%>
+          <%=content_tag(:p, "Barbecue",id:"bar")%>
+        <%end%>
+      </div>
+    </div>
+    <%end%>
+</div>
 </div>

@@ -1,21 +1,66 @@
 body
 {
   font-family: 'Roboto';
-  background-color: white ;
+  background-color: #ecf0f1;
 }
 
 #logo
 {
-  margin: 0 auto;
-  margin-top: 80px;
-  text-align: center;
+
   color: #566270;
+  font-size: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #FFFFF7;
+  border-bottom: 1.5px solid #E7E7E7;
 }
 
+#logo img
+{
+  margin: 10px;
+  width: 180px;
+  display: inline;
+
+}
+
+#logo p
+{
+  margin-top: 0px;
+  display: inline-block;
+  position:absolute;
+  top:28px;
+  margin-left: 10px;
+}
+
+.page_wrapper
+{
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 75%;
+  height: auto;
+  /*border: 1px solid black;*/
+}
+
+.sidebar
+{
+  width: 40%;
+  /*border: 1px solid black;*/
+  float: right;
+  height: auto;
+  margin-top: 0px;
+}
 .posthought
 {
   margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
   text-align: center;
+  color: #566270;
+  font-weight: lighter;
+
 }
 
 .posthought input
@@ -23,10 +68,30 @@ body
   border: 1px solid #E0E3DA;
   border-radius: 10px;
   padding: 5px;
+  margin-left: 3px;
 }
 
-#nickname
+#postbox
 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom: 2px solid #E53A40;
+  text-align: center;
+
+}
+
+#postbox h2
+{
+  padding-top: 20px;
+  color: #2c3e50;
+
+}
+
+#postbox input
+{
+  margin-top: 5px;
   width: 120px;
 }
 
@@ -34,25 +99,25 @@ body
 {
   color: white;
   background-color: #E53A40;
-  opacity: 0.9;
-  border: 0px solid;
+  border: 0px solid white;
+  border-radius: 5px;
+
 }
 
 .posts-container
 {
-  margin: 0 auto;
-  width: 60%;
+  width: 50%;
+  margin-left: 50px;
 }
 
 .post
 {
-  margin: 0 auto;
-  margin-top: 10px;
   background-color: white;
-  width: 60%;
-  border-bottom:3px solid #E0E3DA;
-  border-top:1px solid #E0E3DA;
-
+  width: 100%;
+  height: 330px;
+  border-top: 1px solid #ecf0f1;
+  border-bottom: 2px solid #E26E67;
+  margin-top: 10px;
 }
 
 
@@ -60,36 +125,71 @@ body
 {
   font-weight: bold;
   color:#566270;
-  margin: 10px;
+  position: relative;
+  top:10px;
+  left: 10px;
+
 }
 
 #content
 {
-  overflow: scroll;
-  display:inline;
-  width: 250px;
-  height: 30px;
-  color:#566270;
-  margin: 10px;
+  background-color: #e74c3c;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  color: white;
+
 }
 
+#content p
+{
+  padding-top:100px;
+  font-size: 24px;
+}
 
+#post-bottom
+{
+  width: 100%;
+  height: 30px;
+  margin: 10px;
+
+}
 
 #likenumber
 {
   margin: 10px;
+  color:#F16B6F;
+  display: inline;
+
+}
+#base
+{
+  background-color: #E53A40;
+  color: white;
+  display: inline;
+
+}
+
+
+#toum
+{
   color:#F16B6F;
 }
 
 
 .likes
 {
-  width: 13px;
-  height: 13px;
-  margin-left:0 auto;
+  width: 15px;
+  height: 15px;
   display:inline;
-
 }
+
+.likes img
+{
+  width: 10px;
+}
+
 
 #bar
 {
@@ -122,11 +222,6 @@ body
 
 }
 
-#toum
-{
-  color:#F16B6F;
-}
-
 
 .terms_of_use
 {
@@ -144,4 +239,9 @@ body
 .terms li
 {
   margin: 10px;
+}
+.ads
+{
+  overflow:hidden;
+
 }
